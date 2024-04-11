@@ -156,12 +156,12 @@ function LJF_ShowHide(Shows, Hides) {
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: '1', 
     speed: 900,
-    parallax: true,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
     loop : true,   // 슬라이드 반복 여부
+    parallax: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     effect : 'fade', 
     fadeEffect: { 
       crossFade: true 
@@ -169,6 +169,7 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      dynamicBullets: true,
     },
     // navigation: {
     //   nextEl: ".swiper-button-next",
